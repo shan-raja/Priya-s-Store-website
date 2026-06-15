@@ -1,0 +1,320 @@
+<html>
+
+<head>
+    <title>Priya's Store</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: #fff;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+        }
+
+        .logo span {
+            font-size: 22px;
+            font-weight: bold;
+            color: #190101;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #c45b5b;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 80px;
+            background: #fdeceb;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h1 {
+            font-size: 45px;
+            color: #333;
+        }
+
+        .hero-text p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .hero img {
+            width: 450px;
+            border-radius: 10px;
+        }
+       
+        .categories {
+            padding: 60px;
+            text-align: center;
+        }
+
+        .categories h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .categories-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            width: 250px;
+        }
+
+        .category img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .category button {
+            padding: 10px 20px;
+            border: none;
+            background: #c45b5b;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .category button:hover {
+            background: #a33f3f;
+        }
+
+        .footer {
+            background: #190101;
+            color: white;
+            padding: 50px 40px 20px;
+            margin-top: 50px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-box {
+            width: 230px;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 15px;
+            color: #c45b5b;
+        }
+
+        .footer-box p {
+            margin: 6px 0;
+            font-size: 14px;
+            color: #ddd;
+        }
+
+        .subscribe {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .subscribe input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            flex: 1;
+        }
+
+        .subscribe button {
+            padding: 8px 12px;
+            border: none;
+            background: #c45b5b;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .subscribe button:hover {
+            background: #a33f3f;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .hero img {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .subscribe {
+                justify-content: center;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="image/priya.jpg">
+            <span>Priya's Store</span>
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Priya’s Store</h1>
+            <p>Your one-stop shop for fashion, electronics & accessories.</p>
+        </div>
+
+        <img src="image/sale.jpg">
+    </section>
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="categories-container">
+
+            <div class="category">
+                <img src="image/cloth.jpg">
+                <h3>Clothing</h3>
+                <button>Shop Now</button>
+            </div>
+
+            <div class="category">
+                <img src="image/elctronics.jpg">
+                <h3>Electronics</h3>
+                <button>Shop Now</button>
+            </div>
+
+            <div class="category">
+                <img src="image/acc.jpg">
+                <h3>Accessories</h3>
+                <button>Shop Now</button>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Priya's Store</h3>
+                <p>Your one-stop shop for fashion, electronics & accessories.</p>
+                <p>📍 Chennai, India</p>
+                <p>📞 010-020-0340</p>
+                <p>✉ info@priyastore.com</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <p>Home</p>
+                <p>About</p>
+                <p>Shop</p>
+                <p>Categories</p>
+                <p>Contact</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Categories</h3>
+                <p>Clothing</p>
+                <p>Electronics</p>
+                <p>Accessories</p>
+                <p>New Arrivals</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for updates & offers</p>
+
+                <div class="subscribe">
+                    <input type="text" placeholder="Enter email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Priya's Store. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
